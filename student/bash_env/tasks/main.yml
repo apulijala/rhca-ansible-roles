@@ -1,0 +1,25 @@
+---
+# tasks file for bash_env
+- name: put away .bash_profile
+  template: 
+    src: ".bash_profile.j2"
+    dest: "{{ skel_dir }}/.bash_profile"
+    group: root
+    owner: root
+    mode: '0644'
+
+- name: put away .bashrc
+  template: 
+    src: ".bashrc.j2"
+    dest: "{{ skel_dir }}/.bashrc"
+    group: root
+    owner: root
+    mode: '0644'
+
+- name: put away .vimrc
+  template: 
+    src: ".vimrc.j2"
+    dest: "{{ skel_dir }}/.vimrc"
+    group: root
+    owner: root
+    mode: '0644'

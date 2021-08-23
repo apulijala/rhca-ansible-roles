@@ -1,0 +1,12 @@
+---
+# defaults file for bash_env
+skel_dir: /etc/skel
+default_prompt: '[student prompt \W ]\$'
+
+
+
+
+
+
+
+
